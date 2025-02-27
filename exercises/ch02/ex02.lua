@@ -37,13 +37,8 @@ end
 
 function original_solution()
     add_queen({}, 1)
-    print(Calls_to_is_free_from_attacks)
+    -- print(Calls_to_is_free_from_attacks)
 end
-
--- function permutation_solution()
---    add_queen_permut({}, 1)
--- TODO: figure out way to tracks calls
--- end
 
 -- $ lua -l exercises/ch02/ex02 -e 'original_solution()'
 -- 15720
@@ -88,3 +83,34 @@ function print_perms(xs)
         io.write("\n")
     end
 end
+
+-- permutations:
+-- $ lua -l exercises/ch02/ex02 -e 'print_perms({1, 2, 3, 4, 5, 6, 7, 8})' | wc -l
+-- 40320
+-- There are 40320 permutations to check, more than twice as many as with the original solution!
+
+function is_safe_candidate(perm)
+    for j = 1, N do
+        if not is_free_from_attacks(perm, j, perm[j]) then
+            return false
+        end
+    end
+    return true
+end
+
+function permutation_solution()
+    local perms = permut({ 1, 2, 3, 4, 5, 6, 7, 8 })
+    for i = 1, #perms do
+        if is_safe_candidate(perms[i]) then
+            print_solution(perms[i])
+        end
+    end
+end
+
+-- $ lua -l exercises/ch02/ex02 -e 'permutation_solution()'
+
+-- Comparison
+-- $ time lua -l exercises/ch02/ex02 -e 'original_solution()'
+-- 0.023s
+-- # time lua -l exercises/ch02/ex02 -e 'permutation_solution()'
+-- 0.147s
