@@ -7,7 +7,7 @@ Using _Programming in Lua_ (4th Edition)
 Setup (Arch Linux):
 
 ```sh
-$ sudo pacman -S lua
+$ sudo pacman -S lua luarocks
 ```
 
 ## Usage
@@ -42,3 +42,11 @@ Loading the script file from an interactive session:
 $ lua
 > dofile("examples/hello.lua")
 ```
+
+## Links
+
+- [Official Website](https://lua.org/)
+    - [Reference Manual (Lua 5.4)](https://lua.org/manual/5.4/)
+- [Programming in Lua (Book)](https://lua.org/pil/)
+- [LuaRocks](https://luarocks.org/)
+    - [Documentation](https://github.com/luarocks/luarocks/blob/master/docs/index.md)
