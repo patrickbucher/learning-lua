@@ -1,0 +1,1 @@
+-- SQL uses -- for comments.

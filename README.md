@@ -43,6 +43,28 @@ $ lua
 > dofile("examples/hello.lua")
 ```
 
+Run interactive session after executing a script:
+
+```sh
+$ lua -i examples/hello.lua
+>
+```
+
+Example library script (`examples/hypot.lua`):
+
+```lua
+function hypot(a, b)
+    return math.sqrt(a ^ 2 + b ^ 2)
+end
+```
+
+Load library and execute an expression:
+
+```sh
+$ lua -l examples/hypot -e 'print(hypot(3, 4))'
+5.0
+```
+
 ## Links
 
 - [Official Website](https://lua.org/)
