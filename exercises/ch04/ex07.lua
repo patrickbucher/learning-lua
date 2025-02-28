@@ -3,4 +3,4 @@ function ispali(s)
 end
 
 print(ispali("step on no pets")) --> true
-print(ispali("banana")) --> false
+print(ispali("banana"))          --> false
