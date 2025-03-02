@@ -1,0 +1,7 @@
+- mammals
+    - cow
+    - horse
+    - dog
+- birds
+    - hawk
+    - blackbird

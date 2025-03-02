@@ -54,3 +54,6 @@ filters = {
 function Writer(doc, opts)
     return pandoc.write(doc:walk(filters), 'plain', { wrap_text = 'wrap-none' })
 end
+
+-- pandoc -t bbcode.lua input.md -o output.txt
+-- FIXME: nested list actually starts as a list item of its own
