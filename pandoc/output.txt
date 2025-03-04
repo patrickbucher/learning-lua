@@ -1,1 +1,1 @@
-[list] [*] mammals [*] [list] [*] cow [*] horse [*] dog [/list] [*] birds [*] [list] [*] hawk [*] blackbird [/list] [/list]
+[list] [*] Europe[list] [*] Switzerland[list] [*] Zurich[list] [*] Altstetten [*] Höngg [/list] [*] Bern[list] [*] Matte [*] Wankdorf [/list] [/list] [*] Germany[list] [*] Berlin [*] Munich [/list] [/list] [*] Asia[list] [*] Japan[list] [*] Tokio [/list] [*] China[list] [*] Bejing [/list] [/list] [/list]
