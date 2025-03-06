@@ -5,6 +5,7 @@ local find_last_newline = function(f)
         f:seek("set", pos)
         local s = f:read(1)
         if s == '\n' and pos ~= size - 1 then
+            f:seek("set", 1)
             return pos
         else
             pos = pos - 1
